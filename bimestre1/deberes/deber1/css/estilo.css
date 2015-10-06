@@ -1,0 +1,12 @@
+li#menu{
+	padding: 10px 30px;
+}
+ul#menu li{
+	display: inline;
+}
+ul#menu{
+	padding: 0;
+}
+#slider{
+	background-image: ("imagenes/slider/fondo-slider.jpg");
+}
