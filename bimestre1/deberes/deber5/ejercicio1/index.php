@@ -19,7 +19,7 @@
 				</select><br><br><br><br><br>
 				<button id="convertir" name="convertir">Convertir</button>
 				<br><br><br><hr>
-				<label>Resultado:</label><br><br><br><br><br>
+				<label>Resultado</label>
 				<?php 
 				if (isset($_POST['convertir'])) {
 					
@@ -29,11 +29,11 @@
 						$opcion=$_POST['seleccionar'];
 						if ($opcion==1) {
 								$euros=$dinero*0.93;
-								echo $dinero.'USD equivale a: '.$euros.' Euros';
+								echo $dinero.'USD equivale a: '.$euros;
 							}
 						elseif ($opcion==2) {
-								$pesos=$dinero*2921.15;
-								echo $dinero.'USD equivale a: '.$pesos.' Pesos Colombianos';
+								$pesos=$dinero*2870.67;
+								echo $dinero.'USD equivale a: '.$pesos;
 							}	
 					}
 				}

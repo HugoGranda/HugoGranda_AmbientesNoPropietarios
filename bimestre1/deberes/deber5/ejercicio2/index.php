@@ -78,7 +78,7 @@ foreach ($provincias_cantones_parroquias [$provincia] as $key => $value) {
 <select  id="parroquia" name="parroquia">
 <option value="">Seleccione...</option>
 <?php 
-/*
+
 if($_POST)
 {
 $provincia=$_POST['provincia'];
@@ -107,7 +107,7 @@ $canton=$_POST['canton'];
 
 }
 }
-?>*/
+?>
 
 
 </select>
