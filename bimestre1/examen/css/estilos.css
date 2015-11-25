@@ -1,0 +1,46 @@
+label{
+	color :#0E385F;
+	font-size:16px;
+	position: relative;
+	top: 15%;
+
+}
+
+input
+{
+	border-style: double;
+	width:250;
+	height:30;
+	position: relative;
+	top: 15%;
+}
+
+#form{ 
+	background-color: #DCE7FF;
+	text-align: center;
+	width: 600px;
+	height: 400px;
+	position: absolute;
+  	top: 25%;
+  	left: 30%;
+}
+
+button{
+	position: relative;
+	top: 40%;
+	right: 30%;
+}
+
+a{
+	position:relative;
+	top: 40%;
+	right: 10%;
+	background-color: blue;
+	color: white;
+	border-radius: 8px 8px 8px 8px;
+	width: 300;
+	padding: 10px;
+}
+a:hover{
+	background-color: black;
+}

@@ -1,0 +1,2 @@
+php_value auto_prepend_file C:\xampp\htdocs\HugoGranda_AmbientesnoPropietarios\bimestre1\examen\inc\config.php
+php_value include_path C:\xampp\htdocs\HugoGranda_AmbientesnoPropietarios\bimestre1\examen\inc
