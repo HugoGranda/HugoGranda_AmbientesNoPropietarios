@@ -1,12 +1,72 @@
-li#menu{
-	padding: 10px 30px;
-}
-ul#menu li{
-	display: inline;
-}
-ul#menu{
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
 	padding: 0;
+	margin: 0;
 }
+#nav{
+	width: 100%;
+	height: 85px;
+	position: relative;
+}
+#navlogo{
+	position: absolute;
+	left: 250px;
+	bottom: 50%;
+}
+#navhome{
+	position: absolute;
+	left: 500px;
+}
+#navport{
+	position: absolute;
+	left: 630px;
+	bottom: 50%;
+}
+#navblog{
+	position: absolute;
+	left: 925px;
+	bottom: 45%;
+}
+#navsearch{
+	position: absolute;
+	left: 1100px;
+	bottom: 40%;
+}
+
 #slider{
-	background-image: ("imagenes/slider/fondo-slider.jpg");
+	position: relative;
+	width: 100%;
+	height: 76%;
+	background: url(../imagenes/slider/fondo-slider.jpg)  center;
+}
+#tituloslider{
+	position: absolute;
+	left: 395px;
+	bottom: 70%;
+}
+#textoslider{
+	position: absolute;
+	left: 363px;
+	bottom: 59%;
+}
+#learnslider{
+	position: absolute;
+	left: 41%;
+	bottom: 35%;
+}
+#shape{
+	position: absolute;
+	left: 1100px;
+	bottom: 5%;
+}
+#shapeazulslider{
+	position: absolute;
+	left: 66px;
+	bottom: 39%;
 }

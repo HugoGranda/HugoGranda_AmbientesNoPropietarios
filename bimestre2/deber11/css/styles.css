@@ -1,0 +1,558 @@
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #ffffff;
+    background-color: #12a3d6;
+    background-image: url(../imagenes/navigasyon/hover/hover.png); 
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 31px;
+}
+
+.btn-blog{
+	margin-top: 10px;
+	background-color: #f98561;
+	color: #ffffff;
+	border: none;
+	width: 60px;
+	position: relative;
+	left: 70px;
+	font-family: sans-serif;
+}
+
+.btn-learn{
+	margin-top: 10px;
+	background-color: #f98561;
+	color: #ffffff;
+	border: none;
+	font-family: sans-serif;
+	width: 215px;
+	height: 35px;
+	position: relative;
+	bottom: 120px;
+	font-size: 20px;
+}
+
+.btn-search{
+	background-color: transparent;
+	border: none;
+	position: relative;
+	left: 200px;
+}
+
+.btn-our-service{
+background-color: #2190c1;
+	color: #ffffff;
+	border: none;
+	font-family: sans-serif;
+	width: 150px;
+	height: 35px;
+	position: relative;
+	bottom: 20px;
+	left: 500px;
+	font-size: 15px;
+}
+
+.btn-details{
+	background-color: #bebebe;
+	border: solid #ffffff;
+	font-family: sans-serif;
+	border-radius: 9px;
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	color: #ffffff;
+}
+#btn{
+	background-color: #f4f4f4;
+}
+
+.btn-more{
+	position: absolute;
+	left: 174px;
+	top: 39px;
+	font-family: sans-serif;
+	background-color: #2190c1;
+	border: none;
+	color: #ffffff;
+}
+.btn-search:hover{
+	opacity: 0.8;
+	background-color: transparent;
+}
+
+.navbar-collapse{
+	position: relative;
+	left: 15px;
+	font-family: sans-serif;
+}
+.dropdown{
+	position: relative;
+	left: 20px;
+	font-family: sans-serif;
+}
+
+.about{
+	position: relative;
+	left: 40px;
+	font-family: sans-serif;
+}
+.contact{
+	position: relative;
+	left: 50px;
+	font-family: sans-serif;
+}
+
+.titleimg{
+	position: relative;
+	bottom: 200px;
+	font-size: 30px;
+	color: #cccece;
+}
+
+.leyend1{
+	position: relative;
+	bottom: 190px;
+	color: #cccece;
+}
+.leyend2{
+	position: relative;
+	bottom: 190px;
+	color: #cccece;
+}
+
+.carousel-indicators{
+	position: relative;
+	left: 916px;
+	top: 423px;
+}
+
+#shape{
+	background-color: gray;
+}
+
+.carousel-indicators .active{
+	background-image: url(../imagenes/slider/slider/shapeazul.png);
+	background-repeat: no-repeat;
+	background-size: 5px;
+	background-position: center;
+	border: 3px solid #F27F1B;
+}
+
+#service{
+	background-color: #f4f4f4;
+	height: 300px;
+}
+#servicios1{
+	position: relative;
+	left: 50px;
+}
+
+#servicios3{
+	position: relative;
+	right: 50px;
+}
+
+#servicios4{
+	position: relative;
+	right: 100px;
+}
+
+.search-optimization{
+	position: relative;
+    right: 8px;
+    top: 20px;
+    font-weight: bold;
+}
+.web-design, .online-shop, .social-media{
+	position: relative;
+    left: 17px;
+    top: 20px;
+    font-weight: bold;
+}
+
+.text-web, .text-search,.text-shop,.text-social{
+	display: block;
+	width: 190px;
+	padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+
+	text-align: center;
+	font-family: sans-serif;
+	position: relative;
+    top: 15px;
+    right: 39px;
+}
+
+#portfolio{
+	background-color: #2e3e4f;
+	position: relative;
+    height: 500px;
+}
+
+.title-portfolio{
+	color: #f98561;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: sans-serif;
+	position: relative;
+	top: 40px;
+	left: 100px;
+}
+
+.cuadro1{
+	background-color: #ffffff;
+	width: 284px;
+	height: 222px;
+	position: relative;
+	top: 78px;
+    left: 100px;
+}
+
+.cuadro-centro1{
+	background-color: #ffffff;
+	width: 284px;
+	height: 222px;
+	position: relative;
+	top: 116px;
+    left: 28px;
+}
+
+.cuadro-der1{
+	background-color: #ffffff;
+	width: 284px;
+	height: 222px;
+	position: relative;
+	top: 116px;
+	right: 40px;
+}
+.cuadro2{
+	background-color: #bebebe;
+	width: 264px;
+	height: 202px;
+	position: absolute;
+	margin: 9px;
+}
+
+.cuadro-centro2{
+	background-color: #bebebe;
+	width: 264px;
+	height: 202px;
+	position: absolute;
+	margin: 9px;
+}
+
+.cuadro-der2{
+	background-color: #bebebe;
+	width: 264px;
+	height: 202px;
+	position: absolute;
+	margin: 9px;
+}
+.camera{
+	position: absolute;
+	left: 40%;
+	top: 40%;
+}
+
+.port1,.port2,.port3{
+	color: #f98561;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.port1{
+	position: relative;
+	top: 95px;
+	left: 99px;
+}
+
+.port2{
+	position: relative;
+	top: 133px;
+	left: 27px;
+}
+
+.port3{
+	position: relative;
+	top: 133px;
+	right: 41px;
+}
+
+.leyend-port1,.leyend-port2,.leyend-port3{
+	color: #bebebe;
+	font-family: sans-serif;
+	font-size: 11px;
+}
+
+.leyend-port1{
+	position: relative;
+	top: 90px;
+	left: 99px;
+}
+
+.leyend-port2{
+	position: relative;
+	top: 128px;
+	left: 27px;
+}
+
+.leyend-port3{
+	position: relative;
+	top: 128px;
+	right: 41px;
+}
+
+#offer,#offer-option{
+	background-color: #f4f4f4;
+}
+#offer{
+	height: 200px;
+}
+
+#offer-option{
+	height: 215px;
+}
+.title-offer{
+	position: relative;
+	left: 454px;
+	top: 70px;
+	color: #2190c1;
+	font-weight: bold;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+
+.leyend-offer{
+	position: relative;
+	right: 6px;
+	top:70px;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.offer-web, .offer-search,.offer-shop,.offer-social{
+	color: #2190c1;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.offer-leyend-web, .offer-leyend-search,.offer-leyend-shop,.offer-leyend-social{
+	display: block;
+	width: 200px;
+	padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 11px;
+    line-height: 1.42857143;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+
+	font-family: sans-serif;
+
+}
+
+.btn-web-details,.btn-shop-details{
+	background-color: #2190c1;
+	border-radius: 4px;
+	font-family: sans-serif;
+	color: #ffffff;
+	border: none;
+	position: relative;
+	left: 120px;
+}
+
+
+
+#service-offer-web{
+	position: relative;
+	left: 10px;
+}
+
+#service-offer-search{
+	position: relative;
+    right: 40px;
+}
+#service-offer-shop{
+	position: relative;
+	right: 90px;
+}
+
+#service-offer-social{
+	position: relative;
+	right: 140px;
+}
+
+.linea{
+	position: relative;
+	width: 1050px;
+	noshade;
+}
+
+#testimonials{
+	position: relative;
+	background-color: #f4f4f4;
+	right: 1px;
+	font-weight: bold;
+}
+
+.title-testimonials{
+	color: #2190c1;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: sans-serif;
+	position: relative;
+	left: 27px;
+
+}
+
+.leyend-testimonials{
+	font-family: sans-serif;
+
+	position: relative;
+	right: 246px;
+	text-align: center;
+	position: relative;
+	
+}
+
+#footer{
+	background-color: #2e3e4f;
+}
+
+.footer-cuadro1,.footer-cuadro2,.footer-cuadro3{
+	width: 58px;
+	height: 58px;
+	background-color: #ffffff;
+	position: relative;
+	right: 14px;
+}
+
+.leyend-recent1,.leyend-recent2,.leyend-recent3{
+	width: 123px;
+	font-family: sans-serif;
+	font-size: 10px;
+}
+.leyend-twitter1,.leyend-twitter2,.leyend-twitter3,
+.leyend-newsletter1,.leyend-newsletter2,.leyend-newsletter3,
+.leyend-recent1,.leyend-recent2,.leyend-recent3,
+.leyend-contact1,.leyend-contact2,.leyend-contact3{
+	font-size: 10px;
+	color: #bebebe;
+}
+
+.twitter,.newsletter,.recent,.contact{
+	color: #f98561;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+.leyend-twitter3{
+	width: 175px;
+}
+.leyend-newsletter1{
+	width: 202px;
+}
+
+.leyend-newsletter2{
+	color: #2190c1;
+}
+
+.address{
+	border-radius: 4px;
+	border: none;
+	width: 202px;
+	height: 25px;
+}
+
+.btn-address{
+	border:none;
+	border-radius: 4px;
+	background-color: #2190c1;
+	color: #ffffff;
+	font-family: sans-serif;
+	position: relative;
+	left: 139px;
+	top: 10px;
+}
+
+.hr1{
+	width: 200px;
+	position: relative;
+	right: 14px;
+	bottom: 7px;
+}
+.hr2{
+	width: 200px;
+	position: relative;
+	right: 14px;
+	bottom: 29px;
+}
+
+.leyend-recent1{
+	position: relative;
+	top: 9px;
+}
+.footer-cuadro2{
+	position: relative;
+	bottom: 18px;
+}
+
+.leyend-recent2{
+	position: relative;
+	top: 35px;
+}
+
+.footer-cuadro3{
+	position: relative;
+	bottom: 40px;
+}
+
+.leyend-recent3{
+	position: relative;
+	top: 62px;
+}
+
+.phone,.cel,.mail{
+	position: relative;
+	left: 36px;
+	top: 10px;
+}
+.leyend-contact1,.leyend-contact2,.leyend-contact3{
+	position: relative;
+	top: 10px;	
+}
+.cel{
+	top: 33px;
+
+}
+.leyend-contact2{
+	top: 33px;
+}
+
+.mail{
+	top: 56px;
+}
+
+.leyend-contact3{
+	top: 50px;
+}
+
+#iconTest1{
+	position: relative;
+	left: 200px;
+}
+
+#iconTest2{
+	position: relative;
+	left: 67px;
+}
+#iconTest3{
+	position: relative;
+	right: 166px;
+}
