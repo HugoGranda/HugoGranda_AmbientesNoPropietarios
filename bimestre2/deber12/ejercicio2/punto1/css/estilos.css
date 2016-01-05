@@ -1,0 +1,10 @@
+.contenedor{
+	text-align: center;
+}
+#tabla, th,tr,td{
+	margin: auto;
+	border: 1px solid;
+}
+#tabla{
+	width: 200px;
+}
