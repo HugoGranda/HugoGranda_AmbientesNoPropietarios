@@ -9,43 +9,46 @@
 		<div id="success" class="has-success"></div>
 		<div id="error" class="has-error"></div>
 		
-		<form id="usuarios">
+		<div class="row">
+		<div class="col-md-5 col-md-offset-1">
+			<form id="usuarios">
+		    	<div class="form-group">
+		    		<label for="nombre">Nombre</label>
+			        <input type="text" class="form-control" name="nombre" id="nombre" value="" placeholder="Nombre">
+			    </div>
 
-	    	<div class="form-group">
-	    		<label for="nombre">Nombre</label>
-		        <input type="text" class="form-control" name="nombre" id="nombre" value="" placeholder="Nombre">
-		    </div>
+				<div class="form-group">
+				    <label for="email">Email</label>
+			        <input type="text" class="form-control" name="email" id="email" value="" placeholder="Email">
+		        </div>
 
-			<div class="form-group">
-			    <label for="email">Email</label>
-		        <input type="text" class="form-control" name="email" id="email" value="" placeholder="Email">
-	        </div>
+		        <div class="form-group">
+				    <label for="telefono">Telefono</label>
+			        <input type="text" class="form-control" name="telefono" id="telefono" value="" placeholder="Telefono">
+		        </div>
 
-	        <div class="form-group">
-			    <label for="telefono">Telefono</label>
-		        <input type="text" class="form-control" name="telefono" id="telefono" value="" placeholder="Telefono">
-	        </div>
+		        <div class="form-group">
+				    <label for="direccion">Direccion</label>
+			        <input type="text" class="form-control" name="direccion" id="direccion" value="" placeholder="Direccion">
+		        </div>
 
-	        <div class="form-group">
-			    <label for="direccion">Direccion</label>
-		        <input type="text" class="form-control" name="direccion" id="direccion" value="" placeholder="Direccion">
-	        </div>
+		        <div class="form-group">
+				    <label for="usuario">Usuario</label>
+			        <input type="text" class="form-control" name="usuario" id="usuario" value="" placeholder="Usuario">
+		        </div>
 
-	        <div class="form-group">
-			    <label for="usuario">Usuario</label>
-		        <input type="text" class="form-control" name="usuario" id="usuario" value="" placeholder="Usuario">
-	        </div>
+		        <div class="form-group">
+				    <label for="contrasena">Contraseña</label>
+			        <input type="text" class="form-control" name="contrasena" id="contrasena" value="" placeholder="Contraseña">
+		        </div>
 
-	        <div class="form-group">
-			    <label for="contrasena">Contraseña</label>
-		        <input type="text" class="form-control" name="contrasena" id="contrasena" value="" placeholder="Contraseña">
-	        </div>
-
-	        <div class="form-group">
-			    <label for="conf-contrasena">Confirmar contraseña</label>
-		        <input type="text" class="form-control" name="conf_contrasena" id="conf_contrasena" value="" placeholder="Confirmar contraseña">
-	        </div>
-	   	</form>
+		        <div class="form-group">
+				    <label for="conf-contrasena">Confirmar contraseña</label>
+			        <input type="text" class="form-control" name="conf_contrasena" id="conf_contrasena" value="" placeholder="Confirmar contraseña">
+		        </div>
+		   	</form>
+	   	</div>
+	   	</div>
 	   	<button type="button" class="btn btn-primary" id="btn-enviar">Enviar</button>
 		      
 
