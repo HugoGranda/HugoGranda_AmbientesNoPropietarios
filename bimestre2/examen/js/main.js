@@ -81,9 +81,11 @@ $(document).ready(function(){
 			    if(msg == 'Datos ingresados correctamente')
 			    	$('#mensaje').addClass('alert-danger');
 			    else
-			        $('#mensaje').addClass('irsesion');
+			        location.href="index.php";
 
-	    		$('#mensaje').html('<a href="index.php" type="button" class="btn btn-primary">Inicia tu sesion</a>');
+			        //$('#mensaje').addClass('irsesion');
+
+	    			    		//$('#mensaje').html('<a href="index.php" type="button" class="btn btn-primary">Inicia tu sesion</a>');
 			    console.log("success");
 
 			    $('#usuario').trigger('reset');
@@ -105,7 +107,7 @@ $(document).ready(function(){
 
 		if ($('form#sesion').valid()) {
 			$.$.ajax({
-				url: 'rpc/inicarsesion.php',
+				url: 'rpc/iniciarsesion.php',
 				type: 'POST',
 				//dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
 				data: {
@@ -116,11 +118,12 @@ $(document).ready(function(){
 			})
 			.done(function(msg){
 				if (msg==true) 
-					$('#mensaje').addClass('alert-danger');
+					location.href="matriculacion.php";
+					//$('#mensaje').addClass('alert-danger');
 			    else
-			        $('#mensaje').addClass('irsesion');
+			        location.href="matriculacion.php";
 
-	    		$('#mensaje').html('<a href="matriculacion.php" type="button" class="btn btn-primary">Ir a la matricula</a>');
+	    		
 			    console.log("success");	
 				
 			})
@@ -133,6 +136,26 @@ $(document).ready(function(){
 			
 		};
 	});
+
+	$('#nivel').on('change',function(event){
+		event.preventDefault();
+
+		$.ajax({
+			url: 'rpc/get_materias.php',
+			type: 'POST',
+			data: {nivel: $('#nivel').val()},
+		})
+		  .done(function(msg) {
+			$('#materias').html(msg);
+			console.log("success");
+		})
+		.fail(function() {
+			console.log("error");
+		})
+		.always(function() {
+			console.log("complete");
+		});
+})
 
 	var campo,id; 
 

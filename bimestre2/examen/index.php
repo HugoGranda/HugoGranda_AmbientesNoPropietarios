@@ -1,3 +1,10 @@
+<?php  
+	session_start();
+	include'rpc/iniciarsesion.php';
+	if (isset($_SESSION['matriculado'])) {
+		echo '<script>window.location="matriculacion.php;"</script>';
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,11 +25,11 @@
 			<hr>
 			<div class="row">
 				<div class="col-md-4 col-md-offset-4">
-					<form id="sesion">
+					<form action="iniciarsesion.php" id="sesion" method="POST"> 
 				
 					   	<div class="form-group">
-							<label for="nombre">Nombre</label>
-					        <input type="text" class="form-control" name="nombre" id="nombre" value="" placeholder="Nombre">
+							<label for="email">E-mail</label>
+					        <input type="text" class="form-control" name="email" id="email" value="" placeholder="E-mail">
 						</div>
 
 					    <div class="form-group">
@@ -34,7 +41,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-3 col-md-offset-4">
-						<button type="button" class="btn btn-primary" id="btn-iniciar">Iniciar sesión</button>
+						<button type="submit" class="btn btn-primary" id="btn-iniciar">Iniciar sesión</button>
 
 					</div>
 					<div class="col-md-1">

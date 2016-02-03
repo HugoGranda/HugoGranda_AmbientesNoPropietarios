@@ -1,3 +1,23 @@
+<?php  
+	$conn = new mysqli('localhost' , 'root' , '', 'examen2');
+	if ($conn->connect_error) die($conn ->connect_error);
+	$query = "SELECT * FROM nivel";
+	$result = $conn ->query($query);
+	
+	if (!$result) die($conn ->error);
+
+	$rows = $result ->num_rows;
+	$niveles = array();
+	for ($j = 0 ; $j < $rows ; ++$j){
+		$result ->data_seek($j);
+		$niveles[] = $result ->fetch_array(MYSQLI_ASSOC); //MYSQLI_NUM , MYSQLI_BOTH
+	}
+
+	session_start();
+	if (isset($_SESSION['matriculado'])) {
+		
+	
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,48 +31,41 @@
 			<div id="mensaje"></div>
 			
 			<div class="row">
-				<div class="col-md-9 col-md-offset-3">
-					<label for="lblregistro" id="lblregistro">Registrate para poder matricularte</label>
+				<div class="col-md-9 col-md-offset-2">
+					<label for="lblregistro" id="lblregistro">Bienvenido, en esta pantalla puedes matricularte</label>
 				</div>
 			</div>
 			<hr>
 			<div class="row">
-				<div class="col-md-4 col-md-offset-4">
-					<form id="estudiante">
+				<div class="col-md-8 col-md-offset-2">
+					<form id="matriculacion">
 				
 					   	<div class="form-group">
-							<label for="nombre">Nombre</label>
-					        <input type="text" class="form-control" name="nombre" id="nombre" value="" placeholder="Nombre">
+							<label for="nombre">Seleccione el nivel:</label>
+					        <select id="nivel" name="nivel">
+					        	<option value="">Seleccione..</option>
+					        	<?php 
+					        		foreach ($niveles as $nivel) {
+					        			echo '<option value="'.$nivel['id_nivel'].'">'.$nivel['nombre'].'</option>';
+					        		}
+					        	?>
+					        </select>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<div id="materias">
+									</div>
+								</div>
+							</div>
 						</div>
 
-						<div class="form-group">
-						    <label for="telefono">Apellido</label>
-					        <input type="text" class="form-control" name="apellido" id="apellido" value="" placeholder="Apellido">
-					    </div>
-
-						<div class="form-group">
-						    <label for="email">Email</label>
-					        <input type="text" class="form-control" name="email" id="email" value="" placeholder="Email">
-					    </div>
-
-					    <div class="form-group">
-						    <label for="contraseña">Contraseña</label>
-					        <input type="password" class="form-control" name="contrasenia" id="contrasenia" value="" placeholder="Contraseña">
-					    </div>
-
-					    <div class="form-group">
-						    <label for="verfcontraseña">Verificar Contraseña</label>
-					        <input type="password" class="form-control" name="verfcontrasenia" id="verfcontrasenia" value="" placeholder="Verificar contraseña">
-					    </div>
 					</form>
 				</div>
 				<div class="row">
-					<div class="col-md-3 col-md-offset-4">
-						<button type="button" class="btn btn-primary" id="btn-registrar">Registrate</button>
+					<div class="col-md-3 col-md-offset-5">
+						<button type="button" class="btn btn-primary" id="btn-reg-matricula">Registrar Matricula</button>
 
-					</div>
-					<div class="col-md-1">
-						<button type="button" class="btn btn-primary" id="btn-cancelar">Cancelar</button>
 					</div>
 				</div>
 			</div>
@@ -69,3 +82,9 @@
 		
 	</body>
 </html>
+<?php  
+}
+else{
+	header("Location: index.php");
+}
+?>
